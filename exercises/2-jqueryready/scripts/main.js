@@ -1,0 +1,1 @@
+"use strict";$(".hero-unit").ready(function(){$("span").text("succes")});
