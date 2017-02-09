@@ -60,3 +60,32 @@ Je kan zien wat er getracked wordt met git status maar ook de staat van de besta
 
 Om iets te committen doe je git commit -m (-m laat je een bericht toevoegen).
 
+----------------------------------------------------------------------------------------------------------------------------------------
+Daarnaast is mij ook aangeraden om met Jquery te gaan spelen. Mijn stagebedrijf was aardig genoeg om een jaar CodeSchool voor mij aan te schaffen, om de jquery cursus daar uit te proberen.
+
+Jquery kan voor verschillende dingen gebruikt worden, om iets te animeren, te selecteren of te zoeken.
+
+Het coole van Jquery is dat het met alle moderne browsers kan communiceren. 
+
+The DOM is het Document Object Model, wat in principe de website is die de browser ziet. Je kan met jQuery(document) de DOM benaderen.
+jQuery gebruikt dezelfde selectors als die van CSS om iets te selecteren, zoals jQuery("h1");, de shorthand is $("H1");, $ betekent hetzelfde als jQuery. 
+
+$("H1").text brengt de tekst in de H1 op
+$("H1").text("Test"); verandert de tekst in de H1 naar "Test"
+
+Als de DOM klaar is met laden stuurt het een signaal. $(document).ready(function(){
+$("H1").text("Test");
+}); < Wordt dus uitgevoerd als de pagina klaar met laden is.
+
+$("div p span").text() de () is belangrijk 
+
+$(document).ready(function(){ < wanneer het document geladen is voer dan een functie uit
+  $("span").text("$100");
+});
+
+$("li"); < selecteert alle li in de DOM ("li").text('Orlando') past alle li's aan naar de tekst Orlando
+
+$("p"); element
+$("#container"); < ID
+#(".articles"); < classes
+
