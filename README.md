@@ -104,7 +104,11 @@ break stopt de loop compleet, continue restart het weer
 
 javascript start met het scannen van al je code inclusief je functions voordat het ook maar iets runt, wat betekent dat je functions gebruikt kunnen worden voordat ze aangemaakt zijn, maar het is netter om de juiste volgorde te hanteren.
 
-Je kan functies aanroepen voordat ze aangemaakt zijn, dus een functie declaratie kan bovenaan staan wat fijner is voor readability.
+Je kan functies aanroepen voordat ze aangemaakt zijn, dus een functie declaratie kan bovenaan staan wat fijner is voor readability. (hoisting)
+
+Het netste is om ze bovenaan te doen.
+
+Je MOET functies aanroepen na dat je het aanmaakt, als je het wilt gebruiken. Je doet de naam van de functie en dan () er achter.
 
 parameter vul je in tussen de haakjes ()
 Je kunt het zien als een variable die je in de code kunt gebruiken. function myFunction (x,y) {
@@ -120,7 +124,85 @@ function calculateLoan(amount,months,interests,name) {
 }
 
 calculateLoan(10000,60,7," test persoon")
+Stel, je volgt iets teveel toe, dan is het slim genoeg om dit wat extra is te negeren. Voeg je te weinig toe, dan krijg je undefined terug.
 
+Scope, eigenlijk betekent het, waar is dit variable te zien? Welke code kan de var gebruiken? Een variable die je buiten de functie declared en in de functie nogmaals, hebben toch een andere waarde, omdat degene in de functie een local scope heeft.
+
+function simpleFunction() {
+  var foo = 500
+  console.log(foo)
+}
+console.log(foo); geeft geen resultaat, want voor javascript bestaat het niet, aangezien het in een functie nog zit.
+
+var in een functie gebruiken betekent, het bestaat alleen in deze functie. Wil je echt een variable kunnen gebruiken binnen en buiten een functie, dan declareer je het buiten de functie.
+
+var foo;
+function simpleFunction() {
+  foo = 500
+  console.log(foo)
+}
+
+Variable Scope is alleen relevant binnen functions.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Array's
+
+var singleValue;
+singleValue = 99; < var
+
+var multipleValues = [] ; < Array
+
+multipleValues[0] = 50
+multipleValues[1] = 'string'
+multipleValues=[2] = true
+
+Array's dont care about what you put in there. Array's zijn zero index based, dus het begint bij 0.
+
+Een shorthand voor dit repetieve taakje is var multipleValues = [50,'string',true]
+[0] [1] [2]
+
+Het is ALTIJD een zero based index.
+
+Array's zijn in principe objects.
+
+Verschil is dat Array's waarde's houden, waar je bij objects namen hebt zoals var person = {firstName:"john", saldo:2000, auto:true};
+
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array
+
+Door .length aan het einde van een arraynaam te doen, vraag je op hoeveel items er in zitten.
+
+Stel je wilt iets specifieks in een grote array selecteren, dan wil je dit met een for loop doen
+
+var fruits, text, fLen, i;
+
+fruits = ["Banana", "Orange", "Apple", "Mango"]; < declareer de array en de waarde's
+fLen = fruits.length; < in variable fLen slaan we het aantal items in de array op
+text = "<ul>"; var text = <ul>
+for (i = 0; i < fLen; i++)  < i = 0, als i kleiner is dat het aantal items in de array, tel dan 1 bij i op,{
+    text += "<li>" + fruits[i] + "</li>"; < pak <ul>, plak hier <li> en de betreffende array item bij op, sluit het af met </li>
+}
+
+Wat dit dus doet is vermoedelijk in je html weergeven welke items er in je array zitten.
+
+Stel je wilt wat toevoegen aan de array, dan kun je dat zo doen
+
+function myFunction() {
+    fruits.push("Lemon");
+    document.getElementById("demo").innerHTML = fruits;
+}
+
+myFunction() < in de array fruits, plak Lemon aan het einde, en het html element met waarde 'id' krijgt de text van de array te zien
+
+Arrays gebruiken een numerieke index, waarbij objects namen gebruiken.
+
+JavaScript does not support associative arrays.
+You should use objects when you want the element names to be strings (text).
+You should use arrays when you want the element names to be numbers.
+
+Methods zijn functions zie bij objecten horen.
+
+multipleValues.reverse() < doe de array items reversen, maar het maakt in principe een nieuwe array, waar je het dus in een andere variable in kan opslaan.
 ----------------------------------------------------------------------------------------------------------------------------------------
 Block level container betekent dat het de beschikbare ruimte opneemt, Inline betekent dat het zich aan de content aanpast.
 
