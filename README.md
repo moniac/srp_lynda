@@ -201,7 +201,7 @@ You can have objects in an Array. You can have functions in an Array. You can ha
 Door .length aan het einde van een arraynaam te doen, vraag je op hoeveel items er in zitten.
 
 Stel je wilt iets specifieks in een grote array selecteren, dan wil je dit met een for loop doen
-
+```
 var fruits, text, fLen, i;
 
 fruits = ["Banana", "Orange", "Apple", "Mango"]; < declareer de array en de waardes
@@ -210,18 +210,18 @@ text = "<ul>"; var text = <ul>
 for (i = 0; i < fLen; i++)  < i = 0, als i kleiner is dat het aantal items in de array, tel dan 1 bij i op,{
     text += "<li>" + fruits[i] + "</li>"; < pak ul, plak hier li en de betreffende array item bij op, sluit het af met </li>
 }
-
+```
 Wat dit dus doet is vermoedelijk in je html weergeven welke items er in je array zitten.
 
 Stel je wilt wat toevoegen aan de array, dan kun je dat zo doen
-
+```
 function myFunction() {
     fruits.push("Lemon");
     document.getElementById("demo").innerHTML = fruits;
 }
 
 myFunction() < in de array fruits, plak Lemon aan het einde, en het html element met waarde id krijgt de text van de array te zien
-
+```
 Arrays gebruiken een numerieke index, waarbij objects namen gebruiken.
 
 JavaScript does not support associative arrays.
