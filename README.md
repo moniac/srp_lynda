@@ -208,7 +208,7 @@ fruits = ["Banana", "Orange", "Apple", "Mango"]; < declareer de array en de waar
 fLen = fruits.length; in variable fLen slaan we het aantal items in de array op
 text = "<ul>"; var text = <ul>
 for (i = 0; i < fLen; i++)  < i = 0, als i kleiner is dat het aantal items in de array, tel dan 1 bij i op,{
-    text += "<li>" + fruits[i] + "</li>"; < pak <ul>, plak hier <li> en de betreffende array item bij op, sluit het af met </li>
+    text += "<li>" + fruits[i] + "</li>"; < pak ul, plak hier li en de betreffende array item bij op, sluit het af met </li>
 }
 
 Wat dit dus doet is vermoedelijk in je html weergeven welke items er in je array zitten.
@@ -220,7 +220,7 @@ function myFunction() {
     document.getElementById("demo").innerHTML = fruits;
 }
 
-myFunction() < in de array fruits, plak Lemon aan het einde, en het html element met waarde 'id' krijgt de text van de array te zien
+myFunction() < in de array fruits, plak Lemon aan het einde, en het html element met waarde id krijgt de text van de array te zien
 
 Arrays gebruiken een numerieke index, waarbij objects namen gebruiken.
 
@@ -230,12 +230,12 @@ You should use arrays when you want the element names to be numbers.
 
 Methods zijn functions zie bij objecten horen.
 
-multipleValues.reverse() < doe de array items reversen, maar het maakt in principe een nieuwe array, waar je het dus in een andere variable in kan opslaan.
+multipleValues.reverse() << doe de array items reversen, maar het maakt in principe een nieuwe array, waar je het dus in een andere variable in kan opslaan.
 ----------------------------------------------------------------------------------------------------------------------------------------
 Block level container betekent dat het de beschikbare ruimte opneemt, Inline betekent dat het zich aan de content aanpast.
 
 body {
-  background-color:red !important; < tags met important zullen altijd winnen.
+  background-color:red !important; << tags met important zullen altijd winnen.
 }
 
 Justify Content: align flex items alogn the main axis of the flex container, dus bij row horizontaal en bij column verticaal. Hoe align je de items in de container. (bron http://stackoverflow.com/questions/32551291/in-css--why-are-there-no-justify-items-and-justify-self-properties )
@@ -251,7 +251,7 @@ geven of je geeft de flex-item
     margin: auto;
 }
 
-Fitts' Law states that it's faster to hit larger targets closer to you than it is to hit smaller targets further away from you.
+Fitts Law states that its faster to hit larger targets closer to you than it is to hit smaller targets further away from you.
 
 Met order pas je de volgorde van flex items aan. -1 zal altijd bovenaan staan omdat standaard flex items een waarde van 0 krijgen.
 
@@ -284,7 +284,7 @@ Om iets te committen doe je git commit -m (-m laat je een bericht toevoegen).
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-<h1>jQuery</h1>
+<h1> jQuery </h1>
 
 Daarnaast is mij ook aangeraden om met Jquery te gaan spelen. Mijn stagebedrijf was aardig genoeg om een jaar CodeSchool voor mij aan te schaffen, om de jquery cursus daar uit te proberen. jQuery is iets wat je moet leren en dan gelijk afleren.
 
