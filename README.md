@@ -33,7 +33,7 @@ Javascript leest van boven naar beneden.
 
 Als je javascript in de head staat, wordt de rest van je pagina *niet* geladen totdat je javascript volledig gelezen is. Daarom plaatsen we het boven de laatste body tag.
 
-<h2>Werken met variabelen<h2>
+<h2>Werken met variabelen</h2>
 
 Variabelen zijn containers, kleine blokjes geheugen die we een waarde geven. Je mag een variable naam niet met een nummer starten.
 
