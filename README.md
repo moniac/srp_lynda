@@ -1,59 +1,81 @@
-<h1>Notities/Notes</h1>
+<h1>Notes</h1>
+<strong>I'm still busy updating this to English, so there is a Dutch README available.</strong>
+
+<p>I did this for a personal project, the idea is to write about all the code stuff that I had trouble with, the product should have something for anyone reading this</p>
 
 <h2>SASS vs SCSS</h2>
 
 Sass staat voor Syntactically Awesome Style Sheets, dit is een bepaalde manier van css noteren wat omgezet wordt naar de gewone CSS. Ik twijfel nog een beetje of ik SASS of SCSS wil.
 
-Voordelen Sass:
-Geen {} en ; meer
+SASS stands for Syntactically Awesome Style Sheets, this is a shorter way of writing CSS which will in turn be converted to proper CSS. Next to that it also gives you extra features which will allow you to create variables to include for example a brand's color. As you can imagine there is a huge benefit in using SASS properly. At this point of writing I am still debating on using either SASS or SCSS.
+
+Pro's Sass:
+No more {} and ;
 Variables
 Mixins
+Import
 
-Voordelen SCSS:
-Hetzelfde hierboven maar dan wel {} en ;
+Pro's SCSS:
+It's exactly the same as the above but here you do use {} and ;, which promotes legibility.
+.
 
-Bij SASS geef je dus wat meer duidelijkheid op om sneller te kunnen schrijven, bij grote projecten lijkt het mij wel dat je veel tijd bespaart door geen {} en ; meer te noteren.
+So for SASS you give up clarity for more speed, it might seem small but all the {} and ; you don't have to write anymore will save a lot of time in the end.
 
-
-Uiteindelijk kies ik toch maar voor SCSS, omdat het mij de voordelen geeft en goed leesbaar blijft, wat denk ik toch erg belangrijk is.
+Personally I will choose SASS, since my internship company also uses it.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 <h1>Javascript</h1>
 
 <h2>Basics</h2>
+Javascript is an interpreted language, not a compiled one, this means that browsers will be able to immediatly read your javascript instead of having to convert it first.
 
-Javascript is interpreted, niet compiled, dus browser kan direct lezen ipv eerst omzetten.
+Javascript <strong>is</strong> case sensitive. 
 
-Overduidelijk, maar javascript is case sensitive
+Pseudocode is writing what your code should do in simple words, useful for if you have an idea in your head.
+For example, click button to insert element.
 
-Pseudocode is in simpel engels/nederlands opschrijven wat je wilt dat je code uitvoert.
+Javascript reads from top to bottom.
 
-Javascript leest van boven naar beneden.
+By linking your javascript from the head of your document, the rest of the page will *not* be loaded untill the the javascript document has been read completely, making your users wait. This is why we include javascript above the end body tag.
 
-Als je javascript in de head staat, wordt de rest van je pagina *niet* geladen totdat je javascript volledig gelezen is. Daarom plaatsen we het boven de laatste body tag.
-
-<h2>Werken met variabelen</h2>
+<h2>Working with variables</h2>
 
 Variabelen zijn containers, kleine blokjes geheugen die we een waarde geven. Je mag een variable naam niet met een nummer starten.
 
-var year;
-year = 2016; werkt ook, wel sloppy.
+Variables are containers, small pieces of memory that we give a value. You can not start a variable name with a number.
 
-Je kan het woordje var weglaten, maar dit is sloppy code.
+<h3>These are two ways of declaring a variable</h3>
+
+var year;
+year = 2016; 
+
+As you can see, both ways are methods of declaring a variable, but the second one is very sloppy.
+
+<h3> Ways of declaring multiple variables </h3>
 
 var year;
 var month;
 var year;
 
 var year, month, year;
-<strong>Kan ook zo, sommigen het fijner, sommigen irriteren zich mateloos hieraan.</strong>
+<strong>As you can see, the second method is shorter to write, it's up to you or your company as to which method you will use. Personally I find the first method easier to read.</strong>
 
-var year = 2016, month = 10, day = 31;
+<h3> Giving variables a value <h3>
 
-het is makkelijker om de code te lezen als je alles netjes onder elkaar doet.
+Variables can include a lot of datatypes, these are;
 
-'' of "" maakt niet uit, zolang je ze niet met elkaar mist.
+Strings, such as 'text' with quotations surrounding it.
+Example: var string = 'text'
+
+Strings are text, the difference between 2 and '2' is that 2 is a number, while '2' is a character that doesn't have real value. 
+<strong>'' or "" doesn't matter, just don't mix them up.</strong>
+
+Numbers, you can save a number in a variable.
+For example, var number = 2
+
+Booleans, booleans only have two values, true or false.
+var money = false
 
 score = score + 10 kan ook als score += 10
 += -= * = /=
