@@ -1,4 +1,6 @@
-Notities/Notes
+<h1>Notities/Notes</h1>
+
+<h2>SASS vs SCSS</h2>
 
 Sass staat voor Syntactically Awesome Style Sheets, dit is een bepaalde manier van css noteren wat omgezet wordt naar de gewone CSS. Ik twijfel nog een beetje of ik SASS of SCSS wil.
 
@@ -6,7 +8,6 @@ Voordelen Sass:
 Geen {} en ; meer
 Variables
 Mixins
-
 
 Voordelen SCSS:
 Hetzelfde hierboven maar dan wel {} en ;
@@ -18,7 +19,9 @@ Uiteindelijk kies ik toch maar voor SCSS, omdat het mij de voordelen geeft en go
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Javascript
+<h1>Javascript</h1>
+
+<h2>Basics</h2>
 
 Javascript is interpreted, niet compiled, dus browser kan direct lezen ipv eerst omzetten.
 
@@ -28,12 +31,14 @@ Pseudocode is in simpel engels/nederlands opschrijven wat je wilt dat je code ui
 
 Javascript leest van boven naar beneden.
 
-Als je javascript in de head staat, wordt de rest van je pagina *niet* geladen totdat je javascript volledig gelezen is. Daarom plaatsen we het boven de body.
+Als je javascript in de head staat, wordt de rest van je pagina *niet* geladen totdat je javascript volledig gelezen is. Daarom plaatsen we het boven de laatste body tag.
+
+<h2>Werken met variabelen<h2>
 
 Variabelen zijn containers, kleine blokjes geheugen die we een waarde geven. Je mag een variable naam niet met een nummer starten.
 
 var year;
-year = 2016; werkt
+year = 2016; werkt ook, wel sloppy.
 
 Je kan het woordje var weglaten, maar dit is sloppy code.
 
@@ -42,6 +47,7 @@ var month;
 var year;
 
 var year, month, year;
+<strong>Kan ook zo, sommigen het fijner, sommigen irriteren zich mateloos hieraan.</strong>
 
 var year = 2016, month = 10, day = 31;
 
@@ -176,8 +182,8 @@ Stel je wilt iets specifieks in een grote array selecteren, dan wil je dit met e
 
 var fruits, text, fLen, i;
 
-fruits = ["Banana", "Orange", "Apple", "Mango"]; < declareer de array en de waarde's
-fLen = fruits.length; < in variable fLen slaan we het aantal items in de array op
+fruits = ["Banana", "Orange", "Apple", "Mango"]; < declareer de array en de waardes
+fLen = fruits.length; in variable fLen slaan we het aantal items in de array op
 text = "<ul>"; var text = <ul>
 for (i = 0; i < fLen; i++)  < i = 0, als i kleiner is dat het aantal items in de array, tel dan 1 bij i op,{
     text += "<li>" + fruits[i] + "</li>"; < pak <ul>, plak hier <li> en de betreffende array item bij op, sluit het af met </li>
@@ -210,7 +216,7 @@ body {
   background-color:red !important; < tags met important zullen altijd winnen.
 }
 
-Justify Content: align flex items alogn the main axis of the flex container, dus bij row horizontaal en bij column verticaal. Hoe align je de items in de container. (bron http://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties )
+Justify Content: align flex items alogn the main axis of the flex container, dus bij row horizontaal en bij column verticaal. Hoe align je de items in de container. (bron http://stackoverflow.com/questions/32551291/in-css--why-are-there-no-justify-items-and-justify-self-properties )
 
 Om een element te centreren kun je de container .container {
     justify-content: center;
@@ -255,7 +261,10 @@ Je kan zien wat er getracked wordt met git status maar ook de staat van de besta
 Om iets te committen doe je git commit -m (-m laat je een bericht toevoegen).
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-Daarnaast is mij ook aangeraden om met Jquery te gaan spelen. Mijn stagebedrijf was aardig genoeg om een jaar CodeSchool voor mij aan te schaffen, om de jquery cursus daar uit te proberen.
+
+<h1>jQuery</h1>
+
+Daarnaast is mij ook aangeraden om met Jquery te gaan spelen. Mijn stagebedrijf was aardig genoeg om een jaar CodeSchool voor mij aan te schaffen, om de jquery cursus daar uit te proberen. jQuery is iets wat je moet leren en dan gelijk afleren.
 
 Jquery kan voor verschillende dingen gebruikt worden, om iets te animeren, te selecteren of te zoeken.
 
