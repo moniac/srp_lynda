@@ -61,7 +61,7 @@ var year;
 var year, month, year;
 <strong>As you can see, the second method is shorter to write, it's up to you or your company as to which method you will use. Personally I find the first method easier to read.</strong>
 
-<h3> Giving variables a value <h3>
+<h3> Giving variables a value </h3>
 
 Variables can include a lot of datatypes, these are;
 
