@@ -80,27 +80,28 @@ var money = false
 score = score + 10 kan ook als score += 10
 += -= * = /=
 
-a == b a is gelijk aan b
-a != b als het niet gelijk is aan b
-a === b als het gelijk is aan b in waarde en datatype
-a !==b als het niet gelijk is aan de waarde en datatype
-a > b a groter dan
-a < b a kleiner dan
-a >= gelijk aan of groter dan b
-a <= kleiner dan of gelijk aan b
+a == b a is the same value as b
+a != b a is not the same as b, will return true
+a === b a is the same value <b>and</b> datatype as b
+a !==b returns true if a value not the same as b and also not the same datatype
+a > b a is bigger than v
+a < b a is smaller than b
+a >= b is equal or bigger than b
+a <= b is equal or smaller than b
 
-&& beide moeten waar zijn
-| | 1 van de 2 moet waar zijn
+&& both conditions have to be true
+| | one of the conditions have to be true
 
 % de modelus geeft je wat over blijft, 20 % 3 = 2 want er gaat 3 * 6 in 20 = 18 blijft er 2 over.
+%, called modelus, returns what remains. 20 % 3 = 2 because 6 fits 3 times in 20, which is 18 and returns 2.
 
 var a = 5
 
-alert(++a) tel 1 bij de variable op en weergeef 6
+alert(++a) add 1 to the variable
 
 var a =5
 
-alert(a++)  weergeef 5 en tel dan 1 op
+alert(a++)  call the variable, add 1, show the new variable
 
 pre - post increment
 
@@ -122,19 +123,21 @@ else {
 
 var highscore = (one > two) ? one : two
 
-while loop is vaak efficienter dan een for loop.
+while loop is usually more efficient compared to a for loop
 
-do while loop zal de code altijd minimaal 1 keer uitvoeren
+a do while loop while always do the loop atleast once
 
-for loop brengt alles samen
+a for loop brings everything together
 
-break stopt de loop compleet, continue restart het weer
+break stops the loop, continue has it keep going
 
 javascript start met het scannen van al je code inclusief je functions voordat het ook maar iets runt, wat betekent dat je functions gebruikt kunnen worden voordat ze aangemaakt zijn, maar het is netter om de juiste volgorde te hanteren.
 
+Javascript scans all of the code on start, including the functions before executing anything, which means that you can use functions before they have even been made, but it's nicer to stick to the order
+
 Je kan functies aanroepen voordat ze aangemaakt zijn, dus een functie declaratie kan bovenaan staan wat fijner is voor readability. (hoisting)
 
-Het netste is om ze bovenaan te doen.
+You can call functions above function declarations, this might be nice for readability. (Hoisting)
 
 Je MOET functies aanroepen na dat je het aanmaakt, als je het wilt gebruiken. Je doet de naam van de functie en dan () er achter.
 
