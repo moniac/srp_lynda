@@ -264,24 +264,27 @@ Dit heb ik op mijn portfolio toegepast met mijn projecten op moniac.nl
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Mijn stagebedrijf heeft mij geadviseerd om met Git te leren werken voor version control, toevallig staat dit ook nog in de course voor Front-End, ik ben hier ook mee aan de slag gegaan.
+<h1>Git</h1>
 
-Allereerst, openen van een CMD of terminal. (git bash is beter blijkbaar)
+<small>Since GitHub is such an important tool in the developer world, I wanted to get very familiar with it.</small>
 
+Fire up your terminal of choice.
+```
 mkdir = make directory
 cd = change directory
+cd ~ = go to home
+cd ../ = go one back
+rm = remove
+```
+We use cd to navigate to the folder that we want to go to, alternatively you could cd and drag the folder into the terminal, which will copy the filelocation. What you also could do is use ```mkdir test && cd test``` so that it will both create and navigate to a folder.
 
-we doen eerst cd /desktop om naar het bureaublad te gaan.
-dus bijv, mkdir test && cd test, dan zitten we in de net aangemaakte map.
-
-Dus we zitten dan in de map test, en doen git init, wat ervoor zorgt dat git de folder gaat tracken (repo).
+Now we are in the folder, we type in ```git init```, which will let git do it's thing.
 
 Met ls -la kun je alle bestanden in de map zien waaronder .git.
 
-We moeten de bestanden die we willen tracken toevoegen, bijvoorbeeld git add index.html of git add . wat alles toevoegd
-(of git add *. werkt ook blijkbaar)*  Dus als je git add .html doet voegt ie alle html bestanden toe.
+For git to track your code, we have to tell it to track the files we want it to. You could track all the HTML by using ```git add html.```, you could also do ```git add .``` which will add every file.
 
-Je kan zien wat er getracked wordt met git status maar ook de staat van de bestanden.
+With ```git status``` we can see what is being tracked and what is being changed.
 
 Om iets te committen doe je git commit -m (-m laat je een bericht toevoegen).
 
