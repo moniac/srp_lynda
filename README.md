@@ -1,4 +1,4 @@
-<h1>Notes</h1>
+£ Notes
 <strong>I'm still busy updating this to English, so there is a Dutch README available.</strong>
 
 <p>I did this for a personal project, the idea is to write about all the code stuff that I had trouble with, the product should have something for anyone reading this</p>
